@@ -16,11 +16,11 @@ FS
 
 module.exports =
 {
-    entry: './src/Server.js',
+    entry: './src/codecs/processor-worker/index.ts',
     output:
     {
         path: PATH.resolve(__dirname, 'release'),
-        filename: 'Server.js',
+        filename: 'optimizer.js',
     },
     target: 'node',
     externals: nodeModules,
