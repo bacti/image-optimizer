@@ -24,6 +24,15 @@ module.exports =
     },
     target: 'node',
     externals: nodeModules,
+    module: {
+        rules: [
+            {
+                test: /\.tsx?$/,
+                exclude: /node_modules/,
+                loader: 'ts-loader'
+            },
+        ]
+    },
     plugins:
     [
         new UglifyJSPlugin(),
