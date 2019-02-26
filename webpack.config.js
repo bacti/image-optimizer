@@ -27,12 +27,13 @@ module.exports =
     module: {
         rules: [
             {
-                test: /\.tsx?$/,
+                test: /\.(ts|tsx)(\?\S*)?$/,
                 exclude: /node_modules/,
                 loader: 'ts-loader'
             },
         ]
     },
+    mode: process.env.NODE_ENV,
     plugins:
     [
         new UglifyJSPlugin(),
