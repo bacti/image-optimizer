@@ -1,4 +1,6 @@
 node_modules/
 release/
+
+*.js
 npm-debug.log
 package-lock.json
